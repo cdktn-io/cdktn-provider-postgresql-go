@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
