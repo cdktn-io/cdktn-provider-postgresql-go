@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package publication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/publication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/publication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication postgresql_publication}.
 type Publication interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllTables() interface{}
 	SetAllTables(val interface{})
 	AllTablesInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type Publication interface {
 	SetDropCascade(val interface{})
 	DropCascadeInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,9 +52,9 @@ type Publication interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,9 +64,9 @@ type Publication interface {
 	SetOwner(val *string)
 	OwnerInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type Publication interface {
 	SetTables(val *[]*string)
 	TablesInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -96,7 +96,7 @@ type Publication interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -114,9 +114,9 @@ type Publication interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -157,7 +157,7 @@ type Publication interface {
 
 // The jsii proxy struct for Publication
 type jsiiProxy_Publication struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Publication) AllTables() interface{} {
@@ -180,8 +180,8 @@ func (j *jsiiProxy_Publication) AllTablesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Publication) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_Publication) DropCascadeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Publication) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_Publication) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Publication) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_Publication) OwnerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Publication) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_Publication) TablesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Publication) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -511,7 +511,7 @@ func NewPublication(scope constructs.Construct, id *string, config *PublicationC
 	j := jsiiProxy_Publication{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewPublication_Override(p Publication, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -593,7 +593,7 @@ func (j *jsiiProxy_Publication)SetDropCascade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Publication)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -612,7 +612,7 @@ func (j *jsiiProxy_Publication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Publication)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +645,7 @@ func (j *jsiiProxy_Publication)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Publication)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -697,17 +697,17 @@ func (j *jsiiProxy_Publication)SetTables(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a Publication resource upon running "cdktf plan <stack-name>".
-func Publication_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Publication resource upon running "cdktn plan <stack-name>".
+func Publication_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePublication_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -742,7 +742,7 @@ func Publication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func Publication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func Publication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func Publication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-postgresql.publication.Publication",
+		"@cdktn/provider-postgresql.publication.Publication",
 		"tfResourceType",
 		&returns,
 	)
@@ -838,11 +838,11 @@ func (p *jsiiProxy_Publication) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (p *jsiiProxy_Publication) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Publication) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -979,7 +979,7 @@ func (p *jsiiProxy_Publication) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Publication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_Publication) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -990,11 +990,11 @@ func (p *jsiiProxy_Publication) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (p *jsiiProxy_Publication) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_Publication) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

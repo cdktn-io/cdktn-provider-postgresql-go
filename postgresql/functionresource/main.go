@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionresource
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResource",
+		"@cdktn/provider-postgresql.functionResource.FunctionResource",
 		reflect.TypeOf((*FunctionResource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -96,16 +96,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionResource{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArg",
+		"@cdktn/provider-postgresql.functionResource.FunctionResourceArg",
 		reflect.TypeOf((*FunctionResourceArg)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
+		"@cdktn/provider-postgresql.functionResource.FunctionResourceArgList",
 		reflect.TypeOf((*FunctionResourceArgList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -122,12 +122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionResourceArgList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
+		"@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
 		reflect.TypeOf((*FunctionResourceArgOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,12 +165,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionResourceArgOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceConfig",
+		"@cdktn/provider-postgresql.functionResource.FunctionResourceConfig",
 		reflect.TypeOf((*FunctionResourceConfig)(nil)).Elem(),
 	)
 }

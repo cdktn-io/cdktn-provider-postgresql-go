@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datapostgresqltables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/datapostgresqltables/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables postgresql_tables}.
 type DataPostgresqlTables interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,9 +31,9 @@ type DataPostgresqlTables interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,9 +42,9 @@ type DataPostgresqlTables interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LikeAllPatterns() *[]*string
 	SetLikeAllPatterns(val *[]*string)
 	LikeAllPatternsInput() *[]*string
@@ -57,9 +57,9 @@ type DataPostgresqlTables interface {
 	SetNotLikeAllPatterns(val *[]*string)
 	NotLikeAllPatternsInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RegexPattern() *string
@@ -73,7 +73,7 @@ type DataPostgresqlTables interface {
 	SetTableTypes(val *[]*string)
 	TableTypesInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type DataPostgresqlTables interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,7 +99,7 @@ type DataPostgresqlTables interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -129,11 +129,11 @@ type DataPostgresqlTables interface {
 
 // The jsii proxy struct for DataPostgresqlTables
 type jsiiProxy_DataPostgresqlTables struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataPostgresqlTables) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataPostgresqlTables) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataPostgresqlTables) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlTables) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataPostgresqlTables) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DataPostgresqlTables) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlTables) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataPostgresqlTables) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataPostgresqlTables) NotLikeAllPatternsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlTables) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataPostgresqlTables) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DataPostgresqlTables) TableTypesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlTables) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataPostgresqlTables) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -453,7 +453,7 @@ func NewDataPostgresqlTables(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataPostgresqlTables{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -466,7 +466,7 @@ func NewDataPostgresqlTables_Override(d DataPostgresqlTables, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -502,7 +502,7 @@ func (j *jsiiProxy_DataPostgresqlTables)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlTables)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataPostgresqlTables)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -521,7 +521,7 @@ func (j *jsiiProxy_DataPostgresqlTables)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlTables)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataPostgresqlTables)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +565,7 @@ func (j *jsiiProxy_DataPostgresqlTables)SetNotLikeAllPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlTables)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataPostgresqlTables)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -606,17 +606,17 @@ func (j *jsiiProxy_DataPostgresqlTables)SetTableTypes(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataPostgresqlTables resource upon running "cdktf plan <stack-name>".
-func DataPostgresqlTables_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataPostgresqlTables resource upon running "cdktn plan <stack-name>".
+func DataPostgresqlTables_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataPostgresqlTables_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -651,7 +651,7 @@ func DataPostgresqlTables_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func DataPostgresqlTables_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func DataPostgresqlTables_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DataPostgresqlTables_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables",
 		"tfResourceType",
 		&returns,
 	)
@@ -736,11 +736,11 @@ func (d *jsiiProxy_DataPostgresqlTables) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTables) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataPostgresqlTables) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -864,11 +864,11 @@ func (d *jsiiProxy_DataPostgresqlTables) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTables) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataPostgresqlTables) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

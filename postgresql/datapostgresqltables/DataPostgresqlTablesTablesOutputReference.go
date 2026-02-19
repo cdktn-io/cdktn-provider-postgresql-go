@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datapostgresqltables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/datapostgresqltables/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataPostgresqlTablesTablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type DataPostgresqlTablesTablesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataPostgresqlTablesTablesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataPostgresqlTablesTablesOutputReference interface {
 
 // The jsii proxy struct for DataPostgresqlTablesTablesOutputReference
 type jsiiProxy_DataPostgresqlTablesTablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference) ComplexObjectIndex() interface{} {
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference) TerraformResource(
 }
 
 
-func NewDataPostgresqlTablesTablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataPostgresqlTablesTablesOutputReference {
+func NewDataPostgresqlTablesTablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataPostgresqlTablesTablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataPostgresqlTablesTablesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -192,7 +192,7 @@ func NewDataPostgresqlTablesTablesOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataPostgresqlTablesTablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewDataPostgresqlTablesTablesOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDataPostgresqlTablesTablesOutputReference_Override(d DataPostgresqlTablesTablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataPostgresqlTablesTablesOutputReference_Override(d DataPostgresqlTablesTablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference",
+		"@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPostgresqlTablesTablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -422,8 +422,8 @@ func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -435,11 +435,11 @@ func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -451,7 +451,7 @@ func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) InterpolationForAt
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataPostgresqlTablesTablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

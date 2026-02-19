@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/provider/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs postgresql}.
 type PostgresqlProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -37,7 +37,7 @@ type PostgresqlProvider interface {
 	SetAzureTenantId(val *string)
 	AzureTenantIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Clientcert() *PostgresqlProviderClientcert
 	SetClientcert(val *PostgresqlProviderClientcert)
 	ClientcertInput() *PostgresqlProviderClientcert
@@ -96,7 +96,7 @@ type PostgresqlProvider interface {
 	SetSuperuser(val interface{})
 	SuperuserInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -150,7 +150,7 @@ type PostgresqlProvider interface {
 
 // The jsii proxy struct for PostgresqlProvider
 type jsiiProxy_PostgresqlProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_PostgresqlProvider) Alias() *string {
@@ -293,8 +293,8 @@ func (j *jsiiProxy_PostgresqlProvider) AzureTenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PostgresqlProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_PostgresqlProvider) SuperuserInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PostgresqlProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -724,7 +724,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	j := jsiiProxy_PostgresqlProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -737,7 +737,7 @@ func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -939,17 +939,17 @@ func (j *jsiiProxy_PostgresqlProvider)SetUsername(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>".
-func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>".
+func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePostgresqlProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -984,7 +984,7 @@ func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1003,7 +1003,7 @@ func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1022,7 +1022,7 @@ func PostgresqlProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -1035,7 +1035,7 @@ func PostgresqlProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"tfResourceType",
 		&returns,
 	)

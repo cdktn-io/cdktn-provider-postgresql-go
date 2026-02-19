@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package defaultprivileges
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		reflect.TypeOf((*DefaultPrivileges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -77,12 +77,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultPrivileges{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig",
+		"@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig",
 		reflect.TypeOf((*DefaultPrivilegesConfig)(nil)).Elem(),
 	)
 }

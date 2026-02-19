@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		reflect.TypeOf((*PostgresqlProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,16 +105,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PostgresqlProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert",
+		"@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert",
 		reflect.TypeOf((*PostgresqlProviderClientcert)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.provider.PostgresqlProviderConfig",
+		"@cdktn/provider-postgresql.provider.PostgresqlProviderConfig",
 		reflect.TypeOf((*PostgresqlProviderConfig)(nil)).Elem(),
 	)
 }
