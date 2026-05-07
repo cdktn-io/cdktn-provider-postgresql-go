@@ -93,6 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "volatility", GoGetter: "Volatility"},
 			_jsii_.MemberProperty{JsiiProperty: "volatilityInput", GoGetter: "VolatilityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionResource{}

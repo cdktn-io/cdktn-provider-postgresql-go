@@ -5,9 +5,9 @@ package functionresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/functionresource/internal"
+	"github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/functionresource/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
