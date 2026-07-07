@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/sequences postgresql_sequences}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/sequences postgresql_sequences}.
 type DataPostgresqlSequences interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_DataPostgresqlSequences) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/sequences postgresql_sequences} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/sequences postgresql_sequences} Data Source.
 func NewDataPostgresqlSequences(scope constructs.Construct, id *string, config *DataPostgresqlSequencesConfig) DataPostgresqlSequences {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewDataPostgresqlSequences(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/sequences postgresql_sequences} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/sequences postgresql_sequences} Data Source.
 func NewDataPostgresqlSequences_Override(d DataPostgresqlSequences, scope constructs.Construct, id *string, config *DataPostgresqlSequencesConfig) {
 	_init_.Initialize()
 

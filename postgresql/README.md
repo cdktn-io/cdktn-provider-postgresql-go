@@ -1,6 +1,6 @@
-# CDKTN Go bindings for cyrilgdn/postgresql provider version 1.26.0
+# CDKTN Go bindings for cyrilgdn/postgresql provider version 1.27.0
 
-This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform postgresql provider versio
 These are the upstream dependencies:
 
 * [CDK Terrain](https://cdktn.io) - Last official release
-* [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0)
+* [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
