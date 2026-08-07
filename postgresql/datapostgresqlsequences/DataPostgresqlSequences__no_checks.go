@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataPostgresqlSequences) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataPostgresqlSequences) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataPostgresqlSequences_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

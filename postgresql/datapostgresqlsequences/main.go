@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "regexPattern", GoGetter: "RegexPattern"},
 			_jsii_.MemberProperty{JsiiProperty: "regexPatternInput", GoGetter: "RegexPatternInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLikeAllPatterns", GoMethod: "ResetLikeAllPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLikeAnyPatterns", GoMethod: "ResetLikeAnyPatterns"},

@@ -59,6 +59,10 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PhysicalReplicationSlot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveToIdParameters(id *strin
 }
 
 func (p *jsiiProxy_PhysicalReplicationSlot) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PhysicalReplicationSlot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
